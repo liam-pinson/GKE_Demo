@@ -31,7 +31,7 @@ steps:
     id: 'Deploy App Service'
 
 options:
-  # Using your specific compute service account
-  serviceAccount: 'projects/project-c0025fbd-48a4-4a6b-aa5/serviceAccounts/516088257369-compute@developer.gserviceaccount.com'
-  # This line satisfies requirement (c) from your error message
+  # Use snake_case for the field name
+  service_account: 'projects/project-c0025fbd-48a4-4a6b-aa5/serviceAccounts/516088257369-compute@developer.gserviceaccount.com'
+  # This satisfies the logging requirement
   logging: CLOUD_LOGGING_ONLY
