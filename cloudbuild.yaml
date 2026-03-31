@@ -20,6 +20,7 @@ steps:
     - |
       kubectl apply -f app-deployment.yaml
     id: 'Deploy to GKE'
+
   # Deploying the service in GKE
   - name: 'google/cloud-sdk'
     entrypoint: 'bash'
@@ -28,3 +29,7 @@ steps:
     - |
       kubectl apply -f app-service.yaml
     id: 'Deploy App Service'
+
+# This section fixes the "build.service_account" error
+options:
+  logging: CLOUD_LOGGING_ONLY
