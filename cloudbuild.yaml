@@ -30,6 +30,8 @@ steps:
       kubectl apply -f app-service.yaml
     id: 'Deploy App Service'
 
-# This section fixes the "build.service_account" error
-# options:
-#   logging: CLOUD_LOGGING_ONLY
+options:
+  # Using your specific compute service account
+  serviceAccount: 'projects/project-c0025fbd-48a4-4a6b-aa5/serviceAccounts/516088257369-compute@developer.gserviceaccount.com'
+  # This line satisfies requirement (c) from your error message
+  logging: CLOUD_LOGGING_ONLY
