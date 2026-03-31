@@ -1,6 +1,7 @@
 # GCP WebApp CI/CD Example
 [![Supported python versions](https://img.shields.io/badge/Python-3.11%20%7C%203.11-blue?style=flat-square&logo=python)](https://www.python.org/)
 
+#### https://alekseialeinikov.substack.com/p/cicd-on-google-cloud-in-2025-deploy
 
 This repository demonstrates a simple CI/CD pipeline for a Web UI application deployed on Google Cloud Platform (GCP) using Cloud Build and Kubernetes.
 
