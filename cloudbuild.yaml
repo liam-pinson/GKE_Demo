@@ -30,8 +30,9 @@ steps:
       kubectl apply -f app-service.yaml
     id: 'Deploy App Service'
 
+# The service account must be at the top level, not inside options
+serviceAccount: 'projects/project-c0025fbd-48a4-4a6b-aa5/serviceAccounts/516088257369-compute@developer.gserviceaccount.com'
+
 options:
-  # Use snake_case for the field name
-  service_account: 'projects/project-c0025fbd-48a4-4a6b-aa5/serviceAccounts/516088257369-compute@developer.gserviceaccount.com'
-  # This satisfies the logging requirement
+  # This remains in options to satisfy the logging requirement
   logging: CLOUD_LOGGING_ONLY
