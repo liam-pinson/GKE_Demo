@@ -10,7 +10,7 @@ steps:
 
   # Obtaining credentials for GKE
   - name: 'gcr.io/cloud-builders/gcloud'
-    args: ['container', 'clusters', 'get-credentials', 'test-cluster', '--region', 'us-central1', '--project', '$PROJECT_ID']
+    args: ['container', 'clusters', 'get-credentials', 'test-cluster1', '--region', 'us-central1', '--project', '$PROJECT_ID']
 
   # Deploying the application in GKE
   - name: 'google/cloud-sdk'
